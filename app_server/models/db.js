@@ -1,7 +1,7 @@
 var gracefulShutdown;
 var dbURI = "mongodb://0.0.0.0:27017/";
 if (process.env.NODE_ENV === 'production') {
-    dbURI = process.env.MONGOLAB_URI;
+    dbURI = process.env.MONGODB_URI;
 }
 mongoose.connect(dbURI);
 
