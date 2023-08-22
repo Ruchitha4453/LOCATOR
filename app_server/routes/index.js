@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express');
 var router = express.Router();
 var ctrllocation = require('../controllers/location');
@@ -16,3 +17,6 @@ router.get('/signin', ctrlothers.signin);
 router.get('/register', ctrlothers.register);
 
 module.exports = router;
+
+require('dotenv').config();
+const port = process.env.PORT || 3000;
