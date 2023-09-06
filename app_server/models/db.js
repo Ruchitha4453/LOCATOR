@@ -1,4 +1,6 @@
+require('dotenv').config()
 var gracefulShutdown;
+const mongoose = require('mongoose');
 var dbURI = "mongodb://0.0.0.0:27017/";
 if (process.env.NODE_ENV === 'production') {
     dbURI = process.env.MONGODB_URI;

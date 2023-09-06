@@ -18,5 +18,4 @@ router.get('/register', ctrlothers.register);
 
 module.exports = router;
 
-require('dotenv').config();
-const port = process.env.PORT || 3000;
+ 
